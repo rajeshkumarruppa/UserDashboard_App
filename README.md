@@ -1,4 +1,4 @@
-# React + Vite
+a# React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
@@ -31,30 +31,6 @@ Pagination: Displays a paginated list of users for better navigation.
 
 Responsive Design: Optimized for all screen sizes using Bootstrap.
 
-Folder Structure
-
-
-|USER_CRUD/
-|---user_crud-app/
-|   |src/
-|   |-- components/
-|   |   |-- Create.jsx
-|   |   |-- Read.jsx
-|   |   |-- Update.jsx
-|-- server-api/    # Folder containing JSON server configuration
-|   |-- db.json    # The mock database file
-|-- package.json
-|-- README.md
-
-Prerequisites
-
-Node.js and npm installed on your system.
-
-Install json-server globally:
-
-npm install -g json-server
-
-Setup Instructions
 
 1. Clone the Repository
 
@@ -76,28 +52,6 @@ Axios: For handling HTTP requests.
 React Router DOM: For routing between pages.
 
 JSON Server: To simulate a backend API.
-
-4. Setup JSON Server
-
-Navigate to the server-api folder and ensure the db.json file exists. Example db.json:
-
-{
-  "users": [
-    {
-      "id": 1,
-      "FirstName": "John",
-      "LastName": "Doe",
-      "Email": "john.doe@example.com",
-      "Department": "Engineering"
-    }
-  ]
-}
-5.Start the JSON server:
-  1.take separete terminal and > cd server-api
-  2.run this command :npm run dev   
-  it will start server and gives json-server url = http://localhost:3006/
-
-json-server --watch server-api/db.json --port 3006
 
 6. Start the React App
 
@@ -133,24 +87,43 @@ React Router DOM: For routing and navigation.
 
 Example Endpoints
 
-The JSON server runs at http://localhost:3006.
+The JSONPlaceHolder i used this mockapi =https://67977c52c2c861de0c6ce6a8.mockapi.io/users/users
 
 Fetch all users:
 
-GET http://localhost:3006/users
+GET (https://67977c52c2c861de0c6ce6a8.mockapi.io/users/users)
+
+-Implemented pagination or infinite scrolling for the user list.
+
+![Screenshot 2025-01-27 191556](https://github.com/user-attachments/assets/58bfc55d-467c-4504-85ed-e0bda67c9d72)
+
 
 Add a user:
 
-POST http://localhost:3006/users
+POST (https://67977c52c2c861de0c6ce6a8.mockapi.io/users/users)
+
+-Added client-side validation for the user input form.
+
+![Screenshot 2025-01-27 191708](https://github.com/user-attachments/assets/a69186a2-5a7a-40ec-b2c5-04cf12f9e3c6)
+
 
 Update a user:
 
-PUT http://localhost:3006/users/:id
+PUT https://67977c52c2c861de0c6ce6a8.mockapi.io/users/users/:id
+
+![image](https://github.com/user-attachments/assets/653d4268-8a01-45ee-ab80-abbe555111a7)
+
 
 Delete a user:
 
-DELETE http://localhost:3006/users/:id
+DELETE https://67977c52c2c861de0c6ce6a8.mockapi.io/users/users/:id
 
+
+
+#Challenges Faced
+
+
+During the development process, a key challenge I encountered was creating and customizing mock APIs for CRUD operations. This often consumed a significant amount of time, particularly when ensuring the mock data aligned with the expected structure and behavior of real API endpoints. Managing data consistency and customizing the response to match various use cases added complexity to this part of the development.
 
 
 Author
