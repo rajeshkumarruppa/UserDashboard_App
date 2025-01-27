@@ -7,7 +7,7 @@ const Read = () => {
 
   const{id}=useParams();
   useEffect(() => {
-   axios.get(`http://localhost:3006/users/${id}`)
+   axios.get(`https://67977c52c2c861de0c6ce6a8.mockapi.io/users/users/${id}`)
    .then((response) => {
      console.log(response.data)
      setData(response.data);

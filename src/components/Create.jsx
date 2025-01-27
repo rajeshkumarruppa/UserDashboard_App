@@ -18,7 +18,7 @@ const Create = () => {
   // Fetch users from API
   useEffect(() => {
     axios
-      .get("http://localhost:3006/users")
+      .get("https://67977c52c2c861de0c6ce6a8.mockapi.io/users/users")
       .then((response) => {
         setUsers(response.data);
       })
@@ -56,7 +56,7 @@ const Create = () => {
 
     if (validate()) {
       axios
-        .post("http://localhost:3006/users", values)
+        .post("https://67977c52c2c861de0c6ce6a8.mockapi.io/users/users", values)
         .then((response) => {
           console.log(response);
           setUsers([...users, response.data]); // Update users locally

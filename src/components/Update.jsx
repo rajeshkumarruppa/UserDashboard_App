@@ -21,7 +21,7 @@ const Update = () => {
   // Fetch user data from API when the component mounts
   useEffect(() => {
     // Make a GET request to fetch the user data by ID
-    axios.get(`http://localhost:3006/users/${id}`)
+    axios.get(`https://67977c52c2c861de0c6ce6a8.mockapi.io/users/users/${id}`)
       .then(response => {
         // Set the fetched user data into the state
         setValues(response.data)
@@ -37,7 +37,7 @@ const Update = () => {
     e.preventDefault() // Prevent default form submission
 
     // Make a PUT request to update the user data
-    axios.put(`http://localhost:3006/users/${id}`, values)
+    axios.put(`https://67977c52c2c861de0c6ce6a8.mockapi.io/users/users/${id}`, values)
       .then(response => {
         // Log the updated data if successful
         console.log(response.data)

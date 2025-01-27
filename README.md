@@ -9,7 +9,7 @@ Currently, two official plugins are available:
 
 
 
-User Dashboard with CRUD Operations
+ Dashboard with CRUD Operations
 
 Description
 
@@ -34,7 +34,7 @@ Responsive Design: Optimized for all screen sizes using Bootstrap.
 Folder Structure
 
 
-|USER_CRUD
+|USER_CRUD/
 |---user_crud-app/
 |   |src/
 |   |-- components/

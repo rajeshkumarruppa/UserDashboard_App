@@ -10,7 +10,7 @@ const Home = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3006/users") // Adjust API URL if necessary
+      .get("https://67977c52c2c861de0c6ce6a8.mockapi.io/users/users") // Adjust API URL if necessary
       .then((response) => {
         console.log(response.data);
         setData(response.data);
@@ -24,7 +24,7 @@ const Home = () => {
     const confirm = window.confirm("Are you sure you want to delete this user?");
     if (confirm) {
       axios
-        .delete(`http://localhost:3006/users/${id}`)
+        .delete(`https://67977c52c2c861de0c6ce6a8.mockapi.io/users/users/${id}`)
         .then((response) => {
           console.log(response.data);
           setData(data.filter((user) => user.id !== id)); // Update state after deletion
