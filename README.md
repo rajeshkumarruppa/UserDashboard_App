@@ -11,6 +11,12 @@ Currently, two official plugins are available:
 
  Dashboard with CRUD Operations
 
+ App videodemo:
+https://drive.google.com/file/d/1bQWFDHXVJh5ntpGh2qOsnoa_qQMqPoiC/view?usp=sharing
+
+
+  
+
 Description
 
 This project is a user dashboard application that performs CRUD (Create, Read, Update, Delete) operations using React and Axios. Instead of using a test API like JSONPlaceholder, we have set up a local JSON server using the json-server package. The server simulates a REST API to manage user data. All the CRUD operations interact with this local server.
